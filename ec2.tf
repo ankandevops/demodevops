@@ -11,3 +11,10 @@ resource "aws_instance" "myec2" {
 
   }
 }
+terraform {
+  backend "s3" {
+    bucket = "ankans3"
+    key    = "ec2/terraform.tfstate"
+    region = "us-west-2"
+  }
+}
