@@ -12,6 +12,10 @@ resource "aws_instance" "myec2vm" {
 
   }
 }
+variable "ami"
+{
+ description="ami type variable"
+}
 terraform {
   backend "s3" {
     bucket = "ankans3"
