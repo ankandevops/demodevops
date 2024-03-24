@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "myec2vm" {
-  ami           = "ami-005e54dee72cc1d00"
+  ami           = var.ami
   instance_type = "t2.nano"
 
   tags = {
