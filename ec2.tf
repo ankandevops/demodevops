@@ -12,9 +12,8 @@ resource "aws_instance" "myec2vm" {
 
   }
 }
-variable "ami"
-{
- description="ami type variable"
+variable "ami" {
+ description = "ami type variable"
 }
 terraform {
   backend "s3" {
